@@ -11,7 +11,10 @@ void converter(int note, int base) {
     }
 
     for (int j = i+1; j > -1; --j) {
-        printf("%c", result[j]);
+        if(result[j] != 0) printf("%c", result[j]);
+
+        // clear result
+        result[j] = 0;
     }
 }
 
